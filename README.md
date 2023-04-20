@@ -1,6 +1,6 @@
 # DASK-XGB Demos
 - Download data from NGC: `ngc dataset download 1605418 --dest <destination directory>`
-- Creat environment and install rapids: `conda create -n rapids-23.04 -c rapidsai -c conda-forge -c nvidia  \
+- Creat environment and install rapids: `conda create -n rapids-23.04 -c rapidsai -c conda-forge -c nvidia 
     rapids=23.04 python=3.10 cudatoolkit=11.8`
 - Run notebooks:
     - `train/ranker_models/XGB-186-CLICKS-DASK.ipynb`

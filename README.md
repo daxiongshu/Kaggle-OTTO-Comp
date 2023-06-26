@@ -7,6 +7,10 @@
     - `train/ranker_models/XGB-186-CLICKS-DASK-UCX.ipynb`
     - `train/ranker_models/XGB-186-CLICKS-DASK-SPILL.ipynb`  
     - `train/ranker_models/XGB-186-CLICKS-DASK-UCX-SPILL.ipynb` 
+- Alternatively you can also run the script `train/ranker_models/XGB-186-CLICKS-DASK.py`:
+    - export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7,8
+    - export RAPIDS_NO_INITIALIZE=1
+    - `python train/ranker_models/XGB-186-CLICKS-DASK.py -h` will show all the optional command line args.
 
 # 3rd Place Solution - Kaggle-OTTO-Comp - Chris' Part
 In Kaggle's OTTO competition, we need to build a model that predicts what a user will click, cart, and order in the future at online ecommerce website https://otto.de We are given 4.5 weeks of data and must predict the next 0.5 week. More details are explained at Kaggle [here][1] and final leaderboard is [here][2]. Our team of Benny, Chris, Giba, and Theo won 3rd place cash gold! Our detailed writeup is published [here][3](Chris), [here][4](Theo), and [here][5](Benny) with final submission Kaggle submit notebook [here][8]
